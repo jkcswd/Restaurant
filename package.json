@@ -1,0 +1,19 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "A resturant webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkcspy/Restaurant.git"
+  },
+  "author": "James Spencer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkcspy/Restaurant/issues"
+  },
+  "homepage": "https://github.com/jkcspy/Restaurant#readme"
+}
