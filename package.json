@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jkcspy/Restaurant/issues"
   },
-  "homepage": "https://github.com/jkcspy/Restaurant#readme"
+  "homepage": "https://github.com/jkcspy/Restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0"
+  }
 }
