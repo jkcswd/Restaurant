@@ -1,18 +1,13 @@
-const divCreate = (classList) => {
-    //as this would be used a lot I created a function for sticking to DRY principles.
-     return document.createElement('div').classList.add(classList);
-}
-
 const homeLoad = () => {
     //create all elements used with classes.
     const page = document.querySelector('#page');
-    const header = divCreate('header');
-    const main = divCreate('main');
-    const footer = divCreate('footer');
-    const content = divCreate('content');
-    const about = divCreate('content-box about');
-    const opening = divCreate('content-box opening');
-    const location = divCreate('content-box location');
+    const header = document.createElement('div').classList.add('header');
+    const main = document.createElement('div').classList.add('main');
+    const footer = document.createElement('div').classList.add('footer');
+    const content = document.createElement('div').classList.add('content');
+    const about = document.createElement('div').classList.add('content-box about');
+    const opening = document.createElement('div').classList.add('content-box opening');
+    const location = document.createElement('div').classList.add('content-box location');
 
     // Append text to elements
 
