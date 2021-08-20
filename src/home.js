@@ -1,6 +1,7 @@
 const homeLoad = () => {
     //create all elements used with classes.
-    const page = document.querySelector('#page');
+
+    const page = document.createElement('div').classList.add('page');
     const header = document.createElement('div').classList.add('header');
     const main = document.createElement('div').classList.add('main');
     const footer = document.createElement('div').classList.add('footer');
