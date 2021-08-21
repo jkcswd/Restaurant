@@ -26,11 +26,11 @@ const initLoad = () => {
 
     nodeClassCreate('page', 'body');
     nodeClassCreate('header', '.page', headerHtml);
-    nodeClassCreate('tabs', '.page');
+    nodeClassCreate('main', '.page');
+    nodeClassCreate('tabs', '.main');
     nodeClassCreate('tab', '.tabs', homeTabHtml);
     nodeClassCreate('tab', '.tabs', menuTabHtml);
     nodeClassCreate('tab', '.tabs',contactTabHtml);
-    nodeClassCreate('main', '.page');
     nodeClassCreate('footer', '.page', footerHtml);
     nodeClassCreate('content', '.main');
 
