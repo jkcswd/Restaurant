@@ -1,11 +1,8 @@
 import { nodeClassCreate } from "./utilities";
 
 const homeLoad = () => {
-    //Function to load the home page of website dynamically onto a empty DOM
+    //Function to load the home page of website dynamically onto DOM with initial layout.
     //create innerHTML for nodes that need it.
-    const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
-                        <div>イタリア料理と和食</div>';
-    const footerHtml = 'Created by James Spencer';
     const aboutHtml =  '<p>This is a fake restaurant located in the heart of Fake city UK.\
                         It serves a variety of Japanese-Italian fusion dishes such as\
                         Japanese curry linguine and Miso soup risoto </p>';
@@ -16,11 +13,6 @@ const homeLoad = () => {
     const locationHtml = '<h2>Location</h2><p>123 Fake Street</p><p>Fake City</p><p>FA1 2KE</p>'
 
     //create all elements used with classes and innerHtml and attach to DOM in correct order.
-    const page = nodeClassCreate('page', 'body');
-    const header = nodeClassCreate('header', '.page', headerHtml);
-    const main = nodeClassCreate('main', '.page');
-    const footer = nodeClassCreate('footer', '.page', footerHtml);
-    const content = nodeClassCreate('content', '.main');
     const about = nodeClassCreate('content-box', '.content', aboutHtml);
     const opening = nodeClassCreate('content-box', '.content', openingHtml );
     const location = nodeClassCreate('content-box', '.content', locationHtml);    

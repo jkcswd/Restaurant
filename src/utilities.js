@@ -14,4 +14,19 @@ const nodeClassCreate = (classlist, targetNode, html) => {
     }
 }
 
-export {nodeClassCreate};
+const initLoad = () => {
+    //function to load the general layout of webapp
+
+    const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
+                        <div>イタリア料理と和食</div>';
+    const footerHtml = 'Created by James Spencer';
+
+    const page = nodeClassCreate('page', 'body');
+    const header = nodeClassCreate('header', '.page', headerHtml);
+    const main = nodeClassCreate('main', '.page');
+    const footer = nodeClassCreate('footer', '.page', footerHtml);
+    const content = nodeClassCreate('content', '.main');
+
+}
+
+export {nodeClassCreate, initLoad};
