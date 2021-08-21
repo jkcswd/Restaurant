@@ -13,9 +13,9 @@ const homeLoad = () => {
     const locationHtml = '<h2>Location</h2><p>123 Fake Street</p><p>Fake City</p><p>FA1 2KE</p>'
 
     //create all elements used with classes and innerHtml and attach to DOM in correct order.
-    const about = nodeClassCreate('content-box', '.content', aboutHtml);
-    const opening = nodeClassCreate('content-box', '.content', openingHtml );
-    const location = nodeClassCreate('content-box', '.content', locationHtml);    
+    nodeClassCreate('content-box', '.content', aboutHtml);
+    nodeClassCreate('content-box', '.content', openingHtml );
+    nodeClassCreate('content-box', '.content', locationHtml);    
 }
 
 
