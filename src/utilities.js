@@ -1,3 +1,5 @@
+import { node } from "webpack";
+
 const nodeClassCreate = (classlist, targetNode, html) => {
     // Utility function to allow creation,appention to a DOM node, and adding a class
     const div = document.createElement('div');
@@ -21,11 +23,12 @@ const initLoad = () => {
                         <div>イタリア料理と和食</div>';
     const footerHtml = 'Created by James Spencer';
 
-    const page = nodeClassCreate('page', 'body');
-    const header = nodeClassCreate('header', '.page', headerHtml);
-    const main = nodeClassCreate('main', '.page');
-    const footer = nodeClassCreate('footer', '.page', footerHtml);
-    const content = nodeClassCreate('content', '.main');
+    nodeClassCreate('page', 'body');
+    nodeClassCreate('header', '.page', headerHtml);
+    nodeClassCreate('tabs', '.page');
+    nodeClassCreate('main', '.page');
+    nodeClassCreate('footer', '.page', footerHtml);
+    nodeClassCreate('content', '.main');
 
 }
 
