@@ -1,21 +1,7 @@
+import { nodeClassCreate } from "./utilities";
+
 const homeLoad = () => {
     //Function to load the home page of website dynamically onto a empty DOM
-    //sub function to allow creation,appention to a DOM node, and adding a class
-    const nodeClassCreate = (classlist, targetNode, html) => {
-        const div = document.createElement('div');
-        div.classList.add(classlist);
-
-        if (targetNode === 'body') {
-            document.body.appendChild(div);
-        }else {
-            const target = document.querySelector(targetNode);
-            target.appendChild(div)
-        }
-        if (html) {
-            div.innerHTML += html;
-        }
-    }
-
     //create innerHTML for nodes that need it.
     const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
                         <div>イタリア料理と和食</div>';
