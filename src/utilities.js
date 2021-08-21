@@ -1,5 +1,3 @@
-import { node } from "webpack";
-
 const nodeClassCreate = (classlist, targetNode, html) => {
     // Utility function to allow creation,appention to a DOM node, and adding a class
     const div = document.createElement('div');
@@ -22,9 +20,9 @@ const initLoad = () => {
     const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
                         <div>イタリア料理と和食</div>';
     const footerHtml = 'Created by James Spencer';
-    const homeTabHtml = 'Home'
-    const menuTabHtml = 'Menu'
-    const contactTabHtml = 'Contact'
+    const homeTabHtml = '<button>Home</button>'
+    const menuTabHtml = '<button>Menu</button>'
+    const contactTabHtml = '<button>Contact</button>'
 
     nodeClassCreate('page', 'body');
     nodeClassCreate('header', '.page', headerHtml);
