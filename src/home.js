@@ -19,4 +19,4 @@ const homeLoad = () => {
 }
 
 
-export default homeLoad
+export default homeLoad;
