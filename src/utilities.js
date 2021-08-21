@@ -22,10 +22,16 @@ const initLoad = () => {
     const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
                         <div>イタリア料理と和食</div>';
     const footerHtml = 'Created by James Spencer';
+    const homeTabHtml = 'Home'
+    const menuTabHtml = 'Menu'
+    const contactTabHtml = 'Contact'
 
     nodeClassCreate('page', 'body');
     nodeClassCreate('header', '.page', headerHtml);
     nodeClassCreate('tabs', '.page');
+    nodeClassCreate('tab', '.tabs', homeTabHtml);
+    nodeClassCreate('tab', '.tabs', menuTabHtml);
+    nodeClassCreate('tab', '.tabs',contactTabHtml);
     nodeClassCreate('main', '.page');
     nodeClassCreate('footer', '.page', footerHtml);
     nodeClassCreate('content', '.main');
