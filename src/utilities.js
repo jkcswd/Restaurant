@@ -29,6 +29,7 @@ const initLoad = () => {
     const menuTabHtml = '<button>Menu</button>'
     const contactTabHtml = '<button>Contact</button>'
 
+    document.body.innerHTML = '' //clear all nodes from DOM.
     nodeClassCreate('page', 'body');
     nodeClassCreate('header', '.page', headerHtml);
     nodeClassCreate('main', '.page');
