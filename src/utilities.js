@@ -1,4 +1,4 @@
-const nodeClassCreate = (classlist, targetNode, html) => {
+const nodeClassCreate = (classlist, targetNode, html, ...args) => {
     // Utility function to allow creation,appention to a DOM node, and adding a class
     const div = document.createElement('div');
     div.classList.add(classlist);
@@ -11,6 +11,11 @@ const nodeClassCreate = (classlist, targetNode, html) => {
     }
     if (html) {
         div.innerHTML += html;
+    }
+
+    if (args){
+        //unlimited paramenters at the end of function to add multiple classes to objects.
+        [...args].forEach(arg => div.classList.add(arg));
     }
 }
 
@@ -28,12 +33,11 @@ const initLoad = () => {
     nodeClassCreate('header', '.page', headerHtml);
     nodeClassCreate('main', '.page');
     nodeClassCreate('tabs', '.main');
-    nodeClassCreate('tab', '.tabs', homeTabHtml);
-    nodeClassCreate('tab', '.tabs', menuTabHtml);
-    nodeClassCreate('tab', '.tabs',contactTabHtml);
     nodeClassCreate('footer', '.page', footerHtml);
     nodeClassCreate('content', '.main');
-
+    nodeClassCreate('tab', '.tabs', homeTabHtml, 'home',);
+    nodeClassCreate('tab', '.tabs', menuTabHtml, 'menu');
+    nodeClassCreate('tab', '.tabs',contactTabHtml, 'contact');
 }
 
 export {nodeClassCreate, initLoad};
