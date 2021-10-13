@@ -1,5 +1,5 @@
 const nodeClassCreate = (classlist, targetNode, html, ...args) => {
-    // Utility function to allow creation,appention to a DOM node, and adding a class
+    // Utility function to allow creation,appending to a DOM node, and adding a class
     const div = document.createElement('div');
     div.classList.add(classlist);
 
@@ -14,7 +14,7 @@ const nodeClassCreate = (classlist, targetNode, html, ...args) => {
     }
 
     if (args){
-        //unlimited paramenters at the end of function to add multiple classes to objects.
+        //unlimited parameters at the end of function to add multiple classes to objects.
         [...args].forEach(arg => div.classList.add(arg));
     }
 }
