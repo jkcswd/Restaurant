@@ -12,6 +12,10 @@ const menuLoad = () => {
     nodeClassCreate('content-box','.content', cHtml);
     nodeClassCreate('content-box','.content', dHtml);
     nodeClassCreate('content-box','.content', eHtml);
+
+    const content = document.querySelector('.content');
+
+    content.style.marginBottom = '300px'
 }
 
 

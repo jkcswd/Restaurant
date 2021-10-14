@@ -15,6 +15,10 @@ const homeLoad = () => {
     nodeClassCreate('content-box', '.content', aboutHtml);
     nodeClassCreate('content-box', '.content', openingHtml );
     nodeClassCreate('content-box', '.content', locationHtml);    
+
+    const content = document.querySelector('.content');
+
+    content.style.marginBottom = '100px'
 }
 
 
