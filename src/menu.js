@@ -1,17 +1,17 @@
 import { nodeClassCreate } from "./utilities";
 
 const menuLoad = () => {
-    const curryHtml = 'Japanese beef curry linguine';
-    const misoHtml = 'Miso Risoto'
-    const sukitagHtml = 'Sukiyaki Tagliatelle'
-    const yakipizzaHtml = 'Yakiniku Pizza'
-    const matchaHtml = 'Matcha Gelato'
+    const aHtml = 'Item A';
+    const bHtml = 'Item B';
+    const cHtml = 'Item C';
+    const dHtml = 'Item D';
+    const eHtml = 'Item E';
 
-    nodeClassCreate('content-box','.content', curryHtml)
-    nodeClassCreate('content-box','.content', misoHtml)
-    nodeClassCreate('content-box','.content', sukitagHtml)
-    nodeClassCreate('content-box','.content', yakipizzaHtml)
-    nodeClassCreate('content-box','.content', matchaHtml)
+    nodeClassCreate('content-box','.content', aHtml);
+    nodeClassCreate('content-box','.content', bHtml);
+    nodeClassCreate('content-box','.content', cHtml);
+    nodeClassCreate('content-box','.content', dHtml);
+    nodeClassCreate('content-box','.content', eHtml);
 }
 
 
