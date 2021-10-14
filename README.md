@@ -10,4 +10,4 @@ bundled with Webpack.
 - Webpack
 
 ## How to
-access at this link https://jkcswd.github.io/Restaurant/
+Access at this link https://jkcswd.github.io/Restaurant/
