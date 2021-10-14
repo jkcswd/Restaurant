@@ -52,26 +52,15 @@ body {
 
     border-radius: 10px;
 
-    transition: 0.3s;
 }
 
-.content:hover{
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-}
 .content-box {
     padding:10px;
     margin: 25px;
 
     border: 1px solid white;
     border-radius: 5px;
-
-    transition: 0.3s;
 }
-
-.content-box:hover {
-    transform: scale(1.05);
-}
-
 
 .footer {
     position: fixed;
