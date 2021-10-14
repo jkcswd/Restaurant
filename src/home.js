@@ -1,8 +1,6 @@
 import { nodeClassCreate } from "./utilities";
 
 const homeLoad = () => {
-    //Function to load the home page of website dynamically onto DOM with initial layout.
-    //create innerHTML for nodes that need it.
     const aboutHtml =  '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac erat dolor.\
                          Etiam aliquet, leo id sollicitudin sodales, arcu ligula\
                         vehicula orci, sit amet suscipit neque augue nec erat. Ut aliquam nunc vel tristique\
@@ -14,7 +12,6 @@ const homeLoad = () => {
                         <p>Saturday: 12:00-23:00</p><p>Sunday: 12:00-23:00</p>';
     const locationHtml = '<h2>Location</h2><p>123 Fake Street</p><p>Fake City</p><p>FA1 2KE</p>'
 
-    //create all elements used with classes and innerHtml and attach to DOM in correct order.
     nodeClassCreate('content-box', '.content', aboutHtml);
     nodeClassCreate('content-box', '.content', openingHtml );
     nodeClassCreate('content-box', '.content', locationHtml);    

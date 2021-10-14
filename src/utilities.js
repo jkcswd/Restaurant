@@ -1,5 +1,4 @@
 const nodeClassCreate = (classlist, targetNode, html, ...args) => {
-    // Utility function to allow creation,appending to a DOM node, and adding a class
     const div = document.createElement('div');
     div.classList.add(classlist);
 
@@ -20,7 +19,6 @@ const nodeClassCreate = (classlist, targetNode, html, ...args) => {
 }
 
 const initLoad = () => {
-    //function to load the general layout of webapp
     const headerHtml = '<div><h1>Restaurant</h1></div>\
                         <div>Lorem ipsum dolor</div>';
     const footerHtml = 'Created by James Spencer';
@@ -28,7 +26,7 @@ const initLoad = () => {
     const menuTabHtml = '<button>Menu</button>'
     const contactTabHtml = '<button>Contact</button>'
 
-    document.body.innerHTML = '' //clear all nodes from DOM.
+    document.body.innerHTML = '' 
     nodeClassCreate('page', 'body');
     nodeClassCreate('header', '.page', headerHtml);
     nodeClassCreate('main', '.page');
