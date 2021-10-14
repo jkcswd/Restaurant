@@ -3,9 +3,11 @@ import { nodeClassCreate } from "./utilities";
 const homeLoad = () => {
     //Function to load the home page of website dynamically onto DOM with initial layout.
     //create innerHTML for nodes that need it.
-    const aboutHtml =  '<p>This is a fake restaurant located in the heart of Fake city UK.\
-                        It serves a variety of Japanese-Italian fusion dishes such as\
-                        Japanese curry linguine and Miso soup risoto </p>';
+    const aboutHtml =  '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac erat dolor.\
+                         Etiam aliquet, leo id sollicitudin sodales, arcu ligula\
+                        vehicula orci, sit amet suscipit neque augue nec erat. Ut aliquam nunc vel tristique\
+                         lobortis.Nunc ornare erat felis, ut vehicula est dapibus sed.\
+                         Cras metus nisi, hendrerit vitae ante eget, consectetur ultricies ante. </p>';
     const openingHtml = '<h2>Opening Times</h2><p>Monday: Closed</p>\
                         <p>Tuesday: 12:00-23:00</p><p>Wednesday: 12:00-23:00</p>\
                         <p>Thursday: 12:00-23:00</p><p>Friday: 12:00-23:00</p>\

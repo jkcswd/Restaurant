@@ -21,9 +21,8 @@ const nodeClassCreate = (classlist, targetNode, html, ...args) => {
 
 const initLoad = () => {
     //function to load the general layout of webapp
-
-    const headerHtml = '<div><h1>Italian Japanese Fusion Restaurant</h1></div>\
-                        <div>イタリア料理と和食</div>';
+    const headerHtml = '<div><h1>Restaurant</h1></div>\
+                        <div>Lorem ipsum dolor</div>';
     const footerHtml = 'Created by James Spencer';
     const homeTabHtml = '<button>Home</button>'
     const menuTabHtml = '<button>Menu</button>'
