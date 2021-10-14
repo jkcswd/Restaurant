@@ -10,7 +10,7 @@ const homeLoad = () => {
                         <p>Tuesday: 12:00-23:00</p><p>Wednesday: 12:00-23:00</p>\
                         <p>Thursday: 12:00-23:00</p><p>Friday: 12:00-23:00</p>\
                         <p>Saturday: 12:00-23:00</p><p>Sunday: 12:00-23:00</p>';
-    const locationHtml = '<h2>Location</h2><p>123 Fake Street</p><p>Fake City</p><p>FA1 2KE</p>'
+    const locationHtml = '<h2>Location</h2><p>123 Fake Street</p><p>Fake City</p><p>FA1 2KE</p>';
 
     nodeClassCreate('content-box', '.content', aboutHtml);
     nodeClassCreate('content-box', '.content', openingHtml );

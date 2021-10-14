@@ -2,7 +2,7 @@ import './styles.css';
 import homeLoad from './home';
 import { initLoad } from './utilities';
 import contactLoad from './contact';
-import menuLoad from './menu'
+import menuLoad from './menu';
 
 
 const tabListeners = () => {
